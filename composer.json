@@ -1,0 +1,40 @@
+{
+    "name": "snownight/easyai",
+    "description": "baidu ai api package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "snownight",
+            "email": "yexueduxing@163.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "^6.3",
+        "pimple/pimple": "^3.2",
+        "monolog/monolog": "^1.2",
+        "symfony/cache": "^4.2",
+        "symfony/http-foundation": "^4.2",
+        "symfony/psr-http-message-bridge": "^1.2",
+        "overtrue/socialite": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EasyAi\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "EasyAi\\Tests\\": "tests/"
+      }
+    },
+    "scripts": {
+      "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "stable"
+}
