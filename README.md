@@ -1,7 +1,7 @@
 <h1 align="center"> snownight/easyai </h1>
 
 <p align="center"> snownight/easyai 是一个基于百度开放ai能力的sdk开发组件，
-目前主要提供了百度ai的文本审核能力、文字识别能力、人脸识别能力、图像审核能能力.</p>
+目前主要提供了百度ai的文本审核能力、文字识别能力、人脸识别能力、图像审核能力.</p>
 
 
 ## Installing
