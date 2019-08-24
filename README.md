@@ -59,7 +59,6 @@ $app->ocr->general('file or file url');
 |保险单识别|$app->ocr->insuranceDocuments    |
 |通用机打发票识别|$app->ocr->invoice|
 |行程单识别|$app->ocr->airTicket|
-
 ###人脸识别
 |Api|方法|
 |---|---|
