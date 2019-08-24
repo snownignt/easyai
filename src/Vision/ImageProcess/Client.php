@@ -19,7 +19,9 @@ use EasyAi\Kernel\BaseClient;
  */
 class Client extends BaseClient
 {
+
     /**
+     * 图像无损放大
      * @param string $image
      * @return array|\EasyAi\Kernel\Http\Response|\EasyAi\Kernel\Support\Collection|mixed|\Psr\Http\Message\ResponseInterface
      * @throws \EasyAi\Kernel\Exceptions\InvalidArgumentException
@@ -33,6 +35,7 @@ class Client extends BaseClient
     }
 
     /**
+     * 图像去雾
      * @param string $image
      * @return array|\EasyAi\Kernel\Http\Response|\EasyAi\Kernel\Support\Collection|mixed|\Psr\Http\Message\ResponseInterface
      * @throws \EasyAi\Kernel\Exceptions\InvalidArgumentException
@@ -46,6 +49,7 @@ class Client extends BaseClient
     }
 
     /**
+     * 图像对比度增强
      * @param string $image
      * @return array|\EasyAi\Kernel\Http\Response|\EasyAi\Kernel\Support\Collection|mixed|\Psr\Http\Message\ResponseInterface
      * @throws \EasyAi\Kernel\Exceptions\InvalidArgumentException
@@ -55,10 +59,11 @@ class Client extends BaseClient
      */
     public function contrastEnhance(string $image)
     {
-        return $this->custom('rest/2.0/image-process/v1/image_quality_enhance', $image);
+        return $this->custom('rest/2.0/image-process/v1/contrast_enhance', $image);
     }
 
     /**
+     * 黑白图片上色
      * @param string $image
      * @return array|\EasyAi\Kernel\Http\Response|\EasyAi\Kernel\Support\Collection|mixed|\Psr\Http\Message\ResponseInterface
      * @throws \EasyAi\Kernel\Exceptions\InvalidArgumentException
@@ -68,10 +73,11 @@ class Client extends BaseClient
      */
     public function colorize(string $image)
     {
-        return $this->custom('rest/2.0/image-process/v1/image_quality_enhance', $image);
+        return $this->custom('rest/2.0/image-process/v1/colourize', $image);
     }
 
     /**
+     * 图像拉伸恢复
      * @param string $image
      * @return array|\EasyAi\Kernel\Http\Response|\EasyAi\Kernel\Support\Collection|mixed|\Psr\Http\Message\ResponseInterface
      * @throws \EasyAi\Kernel\Exceptions\InvalidArgumentException
@@ -82,6 +88,19 @@ class Client extends BaseClient
     public function stretchRestore(string $image)
     {
         return $this->custom('rest/2.0/image-process/v1/stretch_restore', $image);
+    }
+
+    /**图像分割转换
+     * @param string $image
+     * @return array|\EasyAi\Kernel\Http\Response|\EasyAi\Kernel\Support\Collection|mixed|\Psr\Http\Message\ResponseInterface
+     * @throws \EasyAi\Kernel\Exceptions\InvalidArgumentException
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @author snownight
+     * @date 2019/8/24 3:55 下午
+     */
+    public function styleTrans(string $image)
+    {
+        return $this->custom('rest/2.0/image-process/v1/style_trans', $image);
     }
 
     /**

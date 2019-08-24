@@ -364,8 +364,6 @@ class Client extends BaseClient
     {
         $options = array_merge(['image_type' => $imageType], $options);
         switch ($imageType) {
-            case "URL":
-                return $this->checkByUrl($file, $url, $options);
             case "BASE64":
                 return $this->checkByImage($file, $url, $options);
             case "FACE_TOKEN":

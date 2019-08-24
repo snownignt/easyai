@@ -86,7 +86,7 @@ class Client extends BaseClient
             'scenes' => $scenes,
             'extTag' => $extTag
         ];
-        return $this->httpPostJson('rest/2.0/solution/v1/video_censor/user_defined', $options);
+        return $this->httpPostJson('rest/2.0/solution/v1/video_censor/', $options);
     }
 
     /**
