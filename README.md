@@ -56,10 +56,10 @@ $app->ocr->general('file or file url');
 |数字识别|$app->ocr->numbers|
 |网络图片文字识别|$app->ocr->webimage|
 |彩票识别|$app->ocr->lottery|
-|保险单识别|$app->ocr->insuranceDocuments    |
+|保险单识别|$app->ocr->insuranceDocuments
 |通用机打发票识别|$app->ocr->invoice|
 |行程单识别|$app->ocr->airTicket|
-###人脸识别
+### 人脸识别
 |Api|方法|
 |---|---|
 |人脸检测与属性分析|$app->face->detect|
