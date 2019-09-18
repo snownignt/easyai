@@ -1,6 +1,6 @@
 {
     "name": "snownight/easyai",
-    "description": "baidu ai api package",
+    "description": "百度AI开放平台SDK",
     "license": "MIT",
     "authors": [
         {
